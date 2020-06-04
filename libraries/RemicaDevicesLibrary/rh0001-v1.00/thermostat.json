@@ -1,0 +1,173 @@
+{
+    "model": "thermostat",
+    "vendor": "Remica",
+    "type": "virtual",
+    "category": [
+        "temperature"
+    ],
+    "description_en": "Thermostat",
+    "description_es": "Termostato",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "mode",
+            "displayName": "Modo",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "select",
+            "states": [
+                {
+                    "name": "Automático",
+                    "value": "auto"
+                },
+                {
+                    "name": "Manual",
+                    "value": "manual"
+                }
+            ]
+        },
+        {
+            "name": "setpoint",
+            "displayName": "Consigna",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "exec",
+            "format": "celsius",
+            "control": "wheel",
+            "limits": {
+                "max": 30,
+                "min": 10,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "screen",
+            "displayName": "Pantalla",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius",
+            "limits": {
+                "max": 30,
+                "min": 10,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "output",
+            "displayName": "Salidas",
+            "prop_category": [
+                "on_off",
+                "text",
+                "heating"
+            ],
+            "interaction": "display",
+            "format": "text",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "temperature",
+            "icon": "thermometer.svg",
+            "displayName": "Temperatura",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius",
+            "limits": {
+                "max": 30,
+                "min": 10,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "temperature_floor",
+            "displayName": "Temperatura suelo",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius",
+            "limits": {
+                "max": 30,
+                "min": 10,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "humidity",
+            "displayName": "Humedad relativa",
+            "prop_category": [
+                "numeric",
+                "humidity"
+            ],
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "interrupter",
+            "displayName": "Sensor de Interrupción",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Activado",
+                    "value": "on"
+                },
+                {
+                    "name": "Desactivado",
+                    "value": "off"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "model": "E1746",
+    "vendor": "Ikea",
+    "type": "Router",
+    "category": ["repeater"],
+    "description_en": "Ikea - E1746 - TRADFRI signal repeater",
+    "description_es": "Ikea - E1746 - TRADFRI repetidor de señal",
+    "properties": [
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

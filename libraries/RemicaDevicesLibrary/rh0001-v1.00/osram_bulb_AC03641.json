@@ -1,0 +1,61 @@
+{
+    "model": "AC03641",
+    "vendor": "Osram",
+    "type": "Router",
+    "category": [
+        "bulb",
+        "touchlink"
+    ],
+    "description_en": "Osram - AC03641 - LIGHTIFY LED Classic A60 clear - E27",
+    "description_es": "Osram - AC03641 - Bombilla LED Classic A60 claro - E27",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendida",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagada",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

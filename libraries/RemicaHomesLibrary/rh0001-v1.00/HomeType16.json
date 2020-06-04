@@ -1,0 +1,20 @@
+{
+  "type": 16,
+  "name": "Radiadores con TRV (Válvula Termostática)",
+  "home": [
+  ],
+  "parameters": [
+    {
+      "name": "Hist_Amb",
+      "type": "parameter",
+      "description": "Histéresis Tª de Zona",
+      "value": "0.5"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General home On / Off wsitch",
+      "value": "1"
+    }
+  ]
+}

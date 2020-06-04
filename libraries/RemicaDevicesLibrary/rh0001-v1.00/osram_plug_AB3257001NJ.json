@@ -1,0 +1,42 @@
+{
+    "model": "AB3257001NJ",
+    "vendor": "Osram",
+    "type": "Router",
+    "category": ["plug"],
+    "description_en": "Osram - AB3257001NJ - Plug01",
+    "description_es": "Osram - AB3257001NJ - Adaptador de enchufe",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "switch",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

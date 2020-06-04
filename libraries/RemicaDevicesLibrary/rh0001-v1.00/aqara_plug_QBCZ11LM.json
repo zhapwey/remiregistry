@@ -1,0 +1,71 @@
+{
+    "model": "QBCZ11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "Router",
+    "category": ["plug"],
+    "description_en": "Aqara - QBCZ11LM - Socket Zigbee",
+    "description_es": "Aqara - QBCZ11LM - Enchufe de pared",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "",
+            "icon": "",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "temperature",
+            "icon": "P_termometro.svg",
+            "displayName": "Temperatura",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius"
+        },
+        {
+            "name": "power",
+            "displayName": "Potencia",
+            "icon": "P_potencia.svg",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "format": "watt"
+        },
+        {
+            "name": "consumption",
+            "displayName": "Energía consumida",
+            "icon": "P_contador_energia.svg",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "format": "kwh"
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "model": "2AJZ4KPFT",
+    "vendor": "Konke",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "temperature"
+    ],
+    "description_en": "Konke - 2AJZ4KPFT - Temperature and humidity sensor",
+    "description_es": "Konke - 2AJZ4KPFT - Sensor de temperatura y humedad",
+    "properties": [
+        {
+            "name": "temperature",
+            "displayName": "Temperatura",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius"
+        },
+        {
+            "name": "humidity",
+            "displayName": "Humedad relativa",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "format": "perc"
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

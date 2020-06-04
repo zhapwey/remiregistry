@@ -1,0 +1,104 @@
+{
+  "type": 7,
+  "name": "Suelo Radiante / Refrescante + Fancoil de 7ºC – 12ºC (En serie) + Válvulas By-Pass + Tª Impulsión",
+  "home": [
+    {
+      "name": "T_Imp_SR",
+      "type": null,
+      "description": "Tª Impulsión suelo R/R",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_1",
+      "type": "coil",
+      "description": "Válvula Patinillo – Equipo 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_2",
+      "type": "coil",
+      "description": "Válvula Fancoil – Equipo 2",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_3",
+      "type": "coil",
+      "description": "Válvula By-Pass – Equipo 3",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_4",
+      "type": "coil",
+      "description": "Válvula By_Pass – Equipo 4",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V1_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V2_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 2",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V3_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 3",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Mod_B",
+      "type": "word",
+      "description": "Fancoil Modulación",
+      "device": null,
+      "property": null,
+      "ignore": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Modo_Inv_Ver",
+      "type": "parameter",
+      "description": "Modo Invierno / Verano",
+      "value": "0"
+    },
+    {
+      "name": "Hist_Amb",
+      "type": "parameter",
+      "description": "Histéresis Tª de Zona",
+      "value": "0.5"
+    },
+    {
+      "name": "Lim_H_Max",
+      "type": "parameter",
+      "description": "Límite Humedad máximo ",
+      "value": "55"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General home On / Off wsitch",
+      "value": "1"
+    }
+  ]
+}

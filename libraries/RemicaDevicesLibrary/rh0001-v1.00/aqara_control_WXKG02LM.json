@@ -1,0 +1,82 @@
+{
+    "model": "WXKG02LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": ["key"],
+    "description_en": "Aqara - WXKG02LM - Double key wireless wall switch",
+    "description_es": "Aqara - WXKG02LM - Llave doble inalámbrica",
+    "properties": [
+        {
+            "name": "click",
+            "displayName": "Última acción",
+            "icon": "",
+            "prop_category": [
+                "click",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Click izquierdo",
+                    "value": "left"
+                },
+                {
+                    "name": "Click derecho",
+                    "value": "right"
+                },
+                {
+                    "name": "Click izquierdo y derecho conjunto",
+                    "value": "both"
+                },
+                {
+                    "name": "Click izquierdo doble",
+                    "value": "left_double"
+                },
+                {
+                    "name": "Click derecho doble",
+                    "value": "right_double"
+                },
+                {
+                    "name": "Click izquierdo y derecho conjunto doble",
+                    "value": "both_double"
+                },
+                {
+                    "name": "Click izquierdo largo",
+                    "value": "left_long"
+                },
+                {
+                    "name": "Click derecho largo",
+                    "value": "right_long"
+                },
+                {
+                    "name": "Click izquierdo y derecho conjunto largo",
+                    "value": "both_long"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

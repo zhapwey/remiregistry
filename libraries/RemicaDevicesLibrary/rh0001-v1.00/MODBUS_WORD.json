@@ -1,0 +1,23 @@
+{
+  "model": "word",
+  "vendor": "remica",
+  "type": "modbus",
+  "category": [],
+  "description_en": "",
+  "description_es": "",
+  "properties": [
+    {
+      "name": "value",
+      "displayName": "Valor",
+      "interaction": "exec",
+      "format": "number",
+      "limits": {
+        "max": 200,
+        "min": 0
+      },
+      "prop_category": [
+        "heating"
+      ]
+    }
+  ]
+}

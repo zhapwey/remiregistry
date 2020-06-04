@@ -1,0 +1,60 @@
+{
+    "model": "MCCGQ11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "contact",
+        "security"
+    ],
+    "description_en": "Aqara - MCCGQ11LM - Door and window contact sensor",
+    "description_es": "Aqara - MCCGQ11LM - Sensor de contacto de puerta y ventana",
+    "properties": [
+        {
+            "name": "contact",
+            "displayName": "Estado",
+            "icon": "",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Contacto cerrado",
+                    "value": "true"
+                },
+                {
+                    "name": "Contacto abierto",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_potencia.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

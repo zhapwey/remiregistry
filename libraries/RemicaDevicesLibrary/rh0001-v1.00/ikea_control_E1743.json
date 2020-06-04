@@ -1,0 +1,66 @@
+{
+    "model": "E1743",
+    "vendor": "Ikea",
+    "type": "EndDevice",
+    "category": ["key"],
+    "description_en": "Ikea - E1743 - TRADFRI on/off switch",
+    "description_es": "Ikea - E1743 - TRADFRI interruptor on/off",
+    "properties": [
+        {
+            "name": "click",
+            "displayName": "Última acción",
+            "prop_category": [
+                "on_off",
+                "click",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "[string]",
+            "states": [
+                {
+                    "name": "Encender",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagar",
+                    "value": "off"
+                },
+                {
+                    "name": "Subir Brillo",
+                    "value": "brightness_up"
+                },
+                {
+                    "name": "Bajar Brillo",
+                    "value": "brightness_down"
+                },
+                {
+                    "name": "Parar Brillo",
+                    "value": "brightness_stop"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

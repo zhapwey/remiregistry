@@ -1,0 +1,21 @@
+{
+    "name": "Thermostat TEST",
+    "icon": "thermostat.svg",
+    "notification": {
+        "type": "inapp",
+        "text": "Test text for a notification"
+    },
+    "conditions": {
+        "time": true,
+        "event": {
+            "prop": [
+                "temperature"
+            ],
+            "evaluation": "AND"
+        }
+    },
+    "actions": [
+        "on_off",
+        "brightness"
+    ]
+}

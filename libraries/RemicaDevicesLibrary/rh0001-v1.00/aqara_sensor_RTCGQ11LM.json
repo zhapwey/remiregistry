@@ -1,0 +1,69 @@
+{
+    "model": "RTCGQ11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "presence",
+        "security"
+    ],
+    "description_en": "Aqara - RTCGQ11LM - Occupancy and illuminance sensor",
+    "description_es": "Aqara - RTCGQ11LM - Sensor de ocupación e iluminación",
+    "properties": [
+        {
+            "name": "occupancy",
+            "displayName": "Estado",
+            "icon": "",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Ocupación activada",
+                    "value": "true"
+                },
+                {
+                    "name": "Ocupación desactivada",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "illuminance",
+            "displayName": "Luminosidad",
+            "icon": "P_luminosidad.svg",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "control" : "numeric",
+            "format": "lux"
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": 1,
+  "name": "Suelo Radiante",
+  "home": [
+    {
+      "name": "V2V_1",
+      "type": "coil",
+      "description": "Válvula Patinillo – Equipo 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Hist_Amb",
+      "type": "parameter",
+      "description": "Histéresis Tª de Zona",
+      "value": "0.5"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General home On / Off wsitch",
+      "value": "1"
+    }
+  ]
+}

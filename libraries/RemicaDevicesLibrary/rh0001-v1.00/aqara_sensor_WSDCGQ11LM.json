@@ -1,0 +1,79 @@
+{
+    "model": "WSDCGQ11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "temperature"
+    ],
+    "description_en": "Aqara - WSDCGQ11LM - Temperature, humidity and pressure sensor",
+    "description_es": "Aqara - WSDCGQ11LM - Sensor de temperatura, humedad y presión",
+    "properties": [
+        {
+            "name": "temperature",
+            "displayName": "Temperatura",
+            "icon": "P_termometro.svg",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius",
+            "limits": {
+                "max": 60,
+                "min": -20,
+                "increment": 0.1
+            }
+        },
+        {
+            "name": "humidity",
+            "displayName": "Humedad relativa",
+            "icon": "P_humedad.svg",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "pressure",
+            "displayName": "Presión atmosférica",
+            "icon": "P_presion.svg",
+            "prop_category": ["numeric"],
+            "interaction": "display",
+            "format": "kpa",
+            "limits": {
+                "max": 110,
+                "min": 30,
+                "increment": 1
+            }
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

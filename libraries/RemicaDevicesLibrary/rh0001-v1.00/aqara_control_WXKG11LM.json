@@ -1,0 +1,78 @@
+{
+    "model": "WXKG11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": ["key"],
+    "description_en": "Aqara - WXKG11LM - Botton wireless wall switch",
+    "description_es": "Aqara - WXKG11LM - Llave inalámbrica pequeña",
+    "properties": [
+        {
+            "name": "click",
+            "displayName": "Última acción",
+            "icon": "",
+            "prop_category": [
+                "click",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Click simple",
+                    "value": "single"
+                },
+                {
+                    "name": "Click doble",
+                    "value": "double"
+                }
+            ]
+        },
+        {
+            "name": "action",
+            "displayName": "Acción",
+            "icon": "",
+            "prop_category": [
+                "click",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Botón Pulsado",
+                    "value": "hold"
+                },
+                {
+                    "name": "Botón libre",
+                    "value": "release"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

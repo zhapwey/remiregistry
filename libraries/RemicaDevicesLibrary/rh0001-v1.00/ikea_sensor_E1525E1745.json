@@ -1,0 +1,57 @@
+{
+    "model": "E1525/E1745",
+    "vendor": "Ikea",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "presence",
+        "security"
+    ],
+    "description_en": "Ikea - E1525/E1745 - Motion sensor",
+    "description_es": "Ikea - E1525/E1745 - Sensor de movimiento",
+    "properties": [
+        {
+            "name": "occupancy",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Ocupación activada",
+                    "value": "true"
+                },
+                {
+                    "name": "Ocupación desactivada",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

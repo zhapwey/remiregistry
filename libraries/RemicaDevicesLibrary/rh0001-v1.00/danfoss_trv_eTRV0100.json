@@ -1,0 +1,78 @@
+{
+    "model": "eTRV0100",
+    "vendor": "Danfoss",
+    "type": "Router",
+    "category": [
+        "trv",
+        "sensor",
+        "temperature"
+    ],
+    "description_en": "Danfoss - eTRV0100 - Wireless heater thermostat",
+    "description_es": "Danfoss - eTRV0100 - Válvula termostática de radiador",
+    "properties": [
+        {
+            "name": "occupied_heating_setpoint",
+            "displayName": "",
+            "icon": "",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "displayName": "Consigna",
+            "interaction": "exec",
+            "format": "celsius",
+            "control": "wheel",
+            "limits": {
+                "max": 28,
+                "min": 6,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "local_temperature",
+            "displayName": "Temperatura",
+            "icon": "P_termometro.svg",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius"
+        },
+        {
+            "name": "pi_heating_demand",
+            "displayName": "Demanda",
+            "icon": "P_demanda_pi.svg",
+            "prop_category": [
+                "numeric"
+            ],
+            "interaction": "display",
+            "format": "perc"
+        },
+
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

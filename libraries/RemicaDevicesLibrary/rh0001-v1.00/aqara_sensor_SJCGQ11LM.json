@@ -1,0 +1,58 @@
+{
+    "model": "SJCGQ11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "security"
+    ],
+    "description_en": "Aqara - SJCGQ11LM - Water leak sensor",
+    "description_es": "Aqara - SJCGQ11LM - Sensor de fuga de agua",
+    "properties": [
+        {
+            "name": "water_leak",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Fuga de agua detectada",
+                    "value": "true"
+                },
+                {
+                    "name": "Fuga de agua no detectada",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

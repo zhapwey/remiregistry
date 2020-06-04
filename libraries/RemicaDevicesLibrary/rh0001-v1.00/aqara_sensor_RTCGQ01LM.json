@@ -1,0 +1,60 @@
+{
+    "model": "RTCGQ01LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "presence",
+        "security"
+    ],
+    "description_en": "Aqara - RTCGQ01LM - Occupancy sensor",
+    "description_es": "Aqara - RTCGQ01LM - Sensor de ocupación",
+    "properties": [
+        {
+            "name": "occupancy",
+            "displayName": "Estado",
+            "icon": "",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Ocupación activada",
+                    "value": "true"
+                },
+                {
+                    "name": "Ocupación desactivada",
+                    "value": "false"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

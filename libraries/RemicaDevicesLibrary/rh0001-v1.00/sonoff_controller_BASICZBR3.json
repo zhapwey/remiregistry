@@ -1,0 +1,46 @@
+{
+    "model": "BASICZBR3",
+    "vendor": "Sonoff",
+    "type": "Router",
+    "category": [
+        "controller",
+        "plug"
+    ],
+    "description_en": "Sonoff - BASICZBR3 - Smart plug",
+    "description_es": "Sonoff - BASICZBR3 - Relé inteligente",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "switch",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

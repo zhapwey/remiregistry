@@ -1,0 +1,63 @@
+{
+    "model": "SCM-S1",
+    "vendor": "Blaupunkt",
+    "type": "Router",
+    "category": [
+        "shutter",
+        "controller"
+    ],
+    "description_en": "Blaupunkt - SCM-S1 - Roller shutter",
+    "description_es": "Blaupunkt - SCM-S1 - Control de Presiana/Toldo",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "icon": "",
+            "prop_category": [
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "select",
+            "states": [
+                {
+                    "name": "Abierta",
+                    "value": "OPEN"
+                },
+                {
+                    "name": "Cerrada",
+                    "value": "CLOSE"
+                }
+            ]
+        },
+        {
+            "name": "position",
+            "displayName": "Posición",
+            "icon": "",
+            "prop_category": [
+                "numeric",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

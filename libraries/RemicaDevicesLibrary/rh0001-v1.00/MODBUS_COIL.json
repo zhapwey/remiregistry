@@ -1,0 +1,30 @@
+{
+  "model": "coil",
+  "vendor": "remica",
+  "type": "modbus",
+  "category": [],
+  "description_en": "",
+  "description_es": "",
+  "properties": [
+    {
+      "name": "state",
+      "displayName": "Estado",
+      "interaction": "exec",
+      "format": "string",
+      "control": "on_off",
+      "states": [
+        {
+          "name": "Apagado",
+          "value": "off"
+        },
+        {
+          "name": "Encendido",
+          "value": "on"
+        }
+      ],
+      "prop_category": [
+        "heating"
+      ]
+    }
+  ]
+}

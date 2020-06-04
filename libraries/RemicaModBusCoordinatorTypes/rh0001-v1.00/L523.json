@@ -1,0 +1,205 @@
+{
+  "model": "Neuron L523",
+  "address": [
+    {
+      "device": 1,
+      "register": 2,
+      "mode": "r/w",
+      "type": "word",
+      "name": "AO1.1",
+      "description": "Salida Analógica 0 - 10V, Cada voltio equivale a 400. \nEjemplo: Para sacar 5,5V hay que poner en el registro 2200."
+    },
+    {
+      "device": 1,
+      "register": 1001,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "-",
+      "description": "False / 0 -> Bus habilitado, True / 1 -> Bus dehabilitado."
+    },
+    {
+      "device": 2,
+      "register": 2,
+      "mode": "r/w",
+      "type": "word",
+      "name": "AO1.1",
+      "description": "Salida Analógica 0 - 10V, Cada voltio equivale a 400. \nEjemplo: Para sacar 5,5V hay que poner en el registro 2200."
+    },
+    {
+      "device": 2,
+      "register": 3,
+      "mode": "r/w",
+      "type": "word",
+      "name": "AO1.2",
+      "description": "Salida Analógica 0 - 10V, Cada voltio equivale a 400. \nEjemplo: Para sacar 5,5V hay que poner en el registro 2200."
+    },
+    {
+      "device": 2,
+      "register": 4,
+      "mode": "r/w",
+      "type": "word",
+      "name": "AO1.3",
+      "description": "Salida Analógica 0 - 10V, Cada voltio equivale a 400. \nEjemplo: Para sacar 5,5V hay que poner en el registro 2200."
+    },
+    {
+      "device": 2,
+      "register": 5,
+      "mode": "r/w",
+      "type": "word",
+      "name": "AO1.4",
+      "description": "Salida Analógica 0 - 10V, Cada voltio equivale a 400. \nEjemplo: Para sacar 5,5V hay que poner en el registro 2200."
+    },
+    {
+      "device": 2,
+      "register": 0,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO2.1",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 2,
+      "register": 1,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO2.2",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 2,
+      "register": 2,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO2.3",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 2,
+      "register": 3,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO2.4",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 2,
+      "register": 4,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO2.5",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 0,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.1",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 1,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.2",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 2,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.3",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 3,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.4",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 4,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.5",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 5,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.6",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 6,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.7",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 7,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.8",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 8,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.9",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 9,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.10",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 10,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.11",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 11,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.12",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 12,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.13",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    },
+    {
+      "device": 3,
+      "register": 13,
+      "mode": "r/w",
+      "type": "coil",
+      "name": "RO3.14",
+      "description": "False / 0 -> Relé abierto, True / 1 -> Relé cerrado."
+    }
+  ]
+}

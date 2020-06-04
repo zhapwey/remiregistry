@@ -1,0 +1,61 @@
+{
+    "model": "DJT11LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "others",
+        "security"
+    ],
+    "description_en": "Aqara - DJT11LM - Vibration sensor",
+    "description_es": "Aqara - DJT11LM - Sensor de Vibración",
+    "properties": [
+        {
+            "name": "action",
+            "displayName": "Última acción",
+            "icon": "",
+            "prop_category": ["text"],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Vibración",
+                    "value": "vibration"
+                },
+                {
+                    "name": "Caída",
+                    "value": "drop"
+                },
+                {
+                    "name": "Inclinación",
+                    "value": "tilt"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

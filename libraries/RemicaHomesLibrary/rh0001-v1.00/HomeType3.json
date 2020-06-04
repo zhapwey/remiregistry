@@ -1,0 +1,92 @@
+{
+  "type": 3,
+  "name": "Suelo Radiante / Refrescante + Fancoil de 7ºC – 12ºC",
+  "home": [
+    {
+      "name": "V2V_1",
+      "type": "coil",
+      "description": "Válvula Patinillo – Equipo 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_2",
+      "type": "coil",
+      "description": "Válvula Fancoil – Equipo 2",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V1_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V2_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 2",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Vel_V3_B",
+      "type": "coil",
+      "description": "Fancoil Velocidad 3",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "FC_Mod_B",
+      "type": "word",
+      "description": "Fancoil Modulación",
+      "device": null,
+      "property": null,
+      "ignore": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Modo_Inv_Ver",
+      "type": "parameter",
+      "description": "Modo Invierno / Verano",
+      "value": "0"
+    },
+    {
+      "name": "Hist_Amb",
+      "type": "parameter",
+      "description": "Histéresis Tª de Zona",
+      "value": "0.5"
+    },
+    {
+      "name": "Lim_T_Suelo_Min",
+      "type": "parameter",
+      "description": "Limite Tª mínima de Suelo ",
+      "value": "13"
+    },
+    {
+      "name": "Lim_T_Suelo_Max",
+      "type": "parameter",
+      "description": "Limite Tª máxima de Suelo",
+      "value": "45"
+    },
+    {
+      "name": "Lim_H_Max",
+      "type": "parameter",
+      "description": "Límite Humedad máximo ",
+      "value": "55"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General home On / Off wsitch",
+      "value": "1"
+    }
+  ]
+}

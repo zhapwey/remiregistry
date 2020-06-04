@@ -1,0 +1,30 @@
+{
+    "model": "WIREDSENSOR_TEMPHUM",
+    "vendor": "",
+    "type": "1wire",
+    "category": [
+        "sensor"
+    ],
+    "description_en": "",
+    "description_es": "",
+    "properties": [
+        {
+            "name": "temperature",
+            "displayName": "Temperatura",
+            "interaction": "display",
+            "format": "celsius",
+            "prop_category": [
+                "temperature"
+            ]
+        },
+        {
+            "name": "humidity",
+            "displayName": "Humedad",
+            "interaction": "display",
+            "format": "perc",
+            "prop_category": [
+                "humidity"
+            ]
+        }
+    ]
+}

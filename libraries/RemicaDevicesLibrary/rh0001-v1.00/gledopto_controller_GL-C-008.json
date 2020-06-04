@@ -1,0 +1,82 @@
+{
+    "model": "GL-C-008",
+    "vendor": "Gledopto",
+    "type": "Router",
+    "category": [
+        "controller",
+        "bulb"
+    ],
+    "description_en": "Gledopto - GL-C-008 - LED controller RGB + CCT",
+    "description_es": "Gledopto - GL-C-008 - Controlador LED RGB + CCT",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendida",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagada",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "color",
+            "displayName": "Color",
+            "prop_category": ["color"],
+            "interaction": "exec",
+            "format": "color",
+            "control": "color"
+        },
+        {
+            "name": "color_temp",
+            "displayName": "Color de temperatura",
+            "prop_category": ["color_temp"],
+            "interaction": "exec",
+            "format": "color_temp",
+            "control": "color_temp",
+            "limits": {
+                "max": 500,
+                "min": 160,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

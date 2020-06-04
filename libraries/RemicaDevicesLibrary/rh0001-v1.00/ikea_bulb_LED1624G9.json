@@ -1,0 +1,66 @@
+{
+    "model": "LED1624G9",
+    "vendor": "Ikea",
+    "type": "Router",
+    "category": ["bulb"],
+    "description_en": "Ikea - LED1624G9 - TRADFRI bulb CWS opal 600lm - E27",
+    "description_es": "Ikea - LED1624G9 - TRADFRI bombilla CWS opal 600lm - E27",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "color",
+            "displayName": "Color",
+            "prop_category": ["color"],
+            "interaction": "exec",
+            "format": "color",
+            "control": "color"
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

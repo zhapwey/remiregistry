@@ -1,0 +1,40 @@
+{
+  "type": 2,
+  "name": "Suelo Radiante / Refrescante",
+  "home": [
+    {
+      "name": "V2V_1",
+      "type": "coil",
+      "description": "Válvula Patinillo – Equipo 1",
+      "device": null,
+      "property": null,
+      "ignore": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Modo_Inv_Ver",
+      "type": "parameter",
+      "description": "Modo Invierno / Verano",
+      "value": "0"
+    },
+    {
+      "name": "Hist_Amb",
+      "type": "parameter",
+      "description": "Histéresis Tª de Zona",
+      "value": "0.5"
+    },
+    {
+      "name": "Lim_H_Max",
+      "type": "parameter",
+      "description": "Límite Humedad máximo",
+      "value": "55"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General home On / Off wsitch",
+      "value": "1"
+    }
+  ]
+}

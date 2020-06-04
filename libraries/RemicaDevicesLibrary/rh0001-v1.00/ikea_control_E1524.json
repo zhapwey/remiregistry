@@ -1,0 +1,107 @@
+{
+    "model": "E1524",
+    "vendor": "Ikea",
+    "type": "EndDevice",
+    "category": ["key"],
+    "description_en": "Ikea - E1524 - TRADFRI remote control",
+    "description_es": "Ikea - E1524 - TRADFRI control remoto",
+    "properties": [
+        {
+            "name": "action",
+            "displayName": "Última acción",
+            "prop_category": [
+                "click",
+                "text"
+            ],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Alternar",
+                    "value": "toggle"
+                },
+                {
+                    "name": "Alternar largo",
+                    "value": "toggle_hold"
+                },
+                {
+                    "name": "Brillo arriba",
+                    "value": "brightness_up_click"
+                },
+                {
+                    "name": "Brillo abajo",
+                    "value": "brightness_down_click"
+                },
+                {
+                    "name": "Flecha derecha",
+                    "value": "arrow_right_click"
+                },
+                {
+                    "name": "Flecha izquierda",
+                    "value": "arrow_left_click"
+                },
+                {
+                    "name": "Brillo arriba largo inicio",
+                    "value": "brightness_up_hold"
+                },
+                {
+                    "name": "Brillo arriba largo fin",
+                    "value": "brightness_up_release"
+                },
+                {
+                    "name": "Brillo abajo largo inicio",
+                    "value": "brightness_down_hold"
+                },
+                {
+                    "name": "Brillo abajo largo fin",
+                    "value": "brightness_down_release"
+                },
+                {
+                    "name": "Flecha derecha largo inicio",
+                    "value": "arrow_right_hold"
+                },
+                {
+                    "name": "Flecha derecha largo fin",
+                    "value": "arrow_right_release"
+                },
+                {
+                    "name": "Flecha izquierda largo inicio",
+                    "value": "arrow_left_hold"
+                },
+                {
+                    "name": "Flecha izquierda largo fin",
+                    "value": "arrow_left_release"
+                }
+            ]
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc"
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

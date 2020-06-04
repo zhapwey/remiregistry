@@ -1,0 +1,63 @@
+{
+    "model": "GWA1522_Actuator_2_CH",
+    "vendor": "Gewis",
+    "type": "Router",
+    "category": ["plug"],
+    "description_en": "Gewis - GWA1522 - Actuator 2CH with input",
+    "description_es": "Gewis - GWA1522 - Actuador 2CH con entrada",
+    "properties": [
+        {
+            "name": "state_l1",
+            "displayName": "Estado L1",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "state_l2",
+            "displayName": "Estado L2",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "button",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

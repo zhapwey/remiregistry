@@ -1,0 +1,111 @@
+{
+    "model": "SPZB0001",
+    "vendor": "Eurotronic",
+    "type": "Router",
+    "category": [
+        "trv",
+        "sensor",
+        "temperature"
+    ],
+    "description_en": "Eurotronic - SPZB0001 - Spirit Zigbee wireless heater thermostat",
+    "description_es": "Eurotronic - SPZB0001 - Válvula termostática de radiador Spirit Zigbee",
+    "properties": [
+        {
+            "name": "current_heating_setpoint",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "displayName": "Consigna",
+            "interaction": "exec",
+            "format": "celsius",
+            "control": "wheel",
+            "limits": {
+                "max": 30,
+                "min": 5,
+                "increment": 0.5
+            }
+        },
+        {
+            "name": "local_temperature",
+            "displayName": "Temperatura",
+            "prop_category": [
+                "numeric",
+                "temperature"
+            ],
+            "interaction": "display",
+            "format": "celsius"
+        },
+        {
+            "name": "eurotronic_system_mode",
+            "displayName": "Modo",
+            "prop_category": ["text"],
+            "interaction": "exec",
+            "format": "string",
+            "control" : "select",
+            "states": [
+                {
+                    "name" : "Auto",
+                    "value" : 1
+                },
+                {
+                    "name" : "Válvula abierta",
+                    "value" : 5
+                },
+                {
+                    "name" : "Válvula cerrada",
+                    "value" : 17
+                },
+                {
+                    "name" : "Auto + Teclado Protegido",
+                    "value" : 129
+                },
+                {
+                    "name" : "Válvula abierta + Teclado Protegido",
+                    "value" : 133
+                },
+                {
+                    "name" : "Válvula cerrada + Teclado Protegido",
+                    "value" : 145
+                }
+            ]
+        },
+        {
+            "name": "local_temperature_calibration",
+            "displayName": "Calibración de temperatura",
+            "prop_category": [
+                "numeric"
+            ],
+            "interaction": "exec",
+            "format": "celsius",
+            "control": "numeric",
+            "limits": {
+                "max": 5,
+                "min": -5,
+                "increment": 0.1
+            }
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

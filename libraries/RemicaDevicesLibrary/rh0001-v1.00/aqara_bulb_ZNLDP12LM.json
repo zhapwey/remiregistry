@@ -1,0 +1,77 @@
+{
+    "model": "ZNLDP12LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "Router",
+    "category": ["bulb"],
+    "description_en": "Aqara - ZNLDP12LM - Smart LED bulb - E27",
+    "description_es": "Aqara - ZNLDP12LM - Bombilla Led inteligente - E27",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "",
+            "icon": "",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendida",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagada",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "",
+            "icon": "",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "color_temp",
+            "displayName": "",
+            "icon": "",
+            "prop_category": [
+                "color_temp"
+            ],
+            "interaction": "exec",
+            "format": "color_temp",
+            "control": "color_temp",
+            "limits": {
+                "max": 360,
+                "min": 160,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

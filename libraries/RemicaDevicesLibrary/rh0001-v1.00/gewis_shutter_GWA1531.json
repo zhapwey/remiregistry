@@ -1,0 +1,42 @@
+{
+    "model": "GWA1531_Shutter",
+    "vendor": "Gewis",
+    "type": "Router",
+    "category": [
+        "shutter",
+        "controller"
+    ],
+    "description_en": "Gewis - GWA1531_Shutter - Roller shutter",
+    "description_es": "Gewis - GWA1531_Shutter - Control de Presiana/Toldo",
+    "properties": [
+        {
+            "name": "position",
+            "displayName": "Posición",
+            "icon": "",
+            "prop_category": [
+                "numeric",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

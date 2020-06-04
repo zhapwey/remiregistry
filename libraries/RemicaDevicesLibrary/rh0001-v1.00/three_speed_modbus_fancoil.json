@@ -1,0 +1,27 @@
+{
+    "model": "sequential",
+    "vendor": "remica",
+    "type": "modbus",
+    "category": [
+        "temperature"
+    ],
+    "description_en": "",
+    "description_es": "",
+    "properties": [
+        {
+            "displayName": "Fan speed",
+            "name": "sequence",
+            "interaction": "exec",
+            "format": "number",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 3,
+                "min": 0,
+                "increment": 1
+            },
+            "prop_category": [
+                "heating"
+            ]
+        }
+    ]
+}

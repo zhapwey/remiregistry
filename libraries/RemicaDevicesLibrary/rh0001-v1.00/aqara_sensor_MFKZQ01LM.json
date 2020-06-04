@@ -1,0 +1,122 @@
+{
+    "model": "MFKZQ01LM",
+    "vendor": "Aqara-Xiaomi",
+    "type": "EndDevice",
+    "category": [
+        "sensor",
+        "others"
+    ],
+    "description_en": "Aqara - MFKZQ01LM - Cube",
+    "description_es": "Aqara - MFKZQ01LM - Cubo",
+    "properties": [
+        {
+            "name": "action",
+            "displayName": "Última acción",
+            "icon": "",
+            "prop_category": ["text"],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "Giro a la izquierda",
+                    "value": "rotate_left"
+                },
+                {
+                    "name": "Giro a la derecha",
+                    "value": "rotate_right"
+                },
+                {
+                    "name": "Volteo de 90º",
+                    "value": "flip90"
+                },
+                {
+                    "name": "Volteo de 180º",
+                    "value": "flip180"
+                },
+                {
+                    "name": "Caída",
+                    "value": "fall"
+                },
+                {
+                    "name": "Deslizado",
+                    "value": "slide"
+                },
+                {
+                    "name": "Iniciar",
+                    "value": "wakeup"
+                }
+            ]
+        },
+        {
+            "name": "side",
+            "displayName": "Cara",
+            "icon": "",
+            "prop_category": ["text", "numeric"],
+            "interaction": "display",
+            "control" : "select",
+            "format": "string",
+            "states": [
+                {
+                    "name": "1",
+                    "value": "0"
+                },
+                {
+                    "name": "2",
+                    "value": "1"
+                },
+                {
+                    "name": "3",
+                    "value": "2"
+                },
+                {
+                    "name": "4",
+                    "value": "3"
+                },
+                {
+                    "name": "5",
+                    "value": "4"
+                },
+                {
+                    "name": "6",
+                    "value": "5"
+                }
+            ]
+        },
+        {
+            "name": "angle",
+            "displayName": "Ángulo",
+            "icon": "",
+            "interaction": "display",
+            "limits": {
+                "max": 360,
+                "min": -360,
+                "increment": 5
+            }
+        },
+        {
+            "name": "battery",
+            "displayName": "Batería",
+            "icon": "P_bateria.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "icon": "P_calidad.svg",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

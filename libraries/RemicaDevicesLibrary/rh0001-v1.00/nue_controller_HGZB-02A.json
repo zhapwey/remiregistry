@@ -1,0 +1,55 @@
+{
+    "model": "HGZB-02A",
+    "vendor": "Nue / 3A",
+    "type": "Router",
+    "category": ["bulb"],
+    "description_en": "Nue / 3A - HGZB-02A - Smart light controller",
+    "description_es": "Nue / 3A - HGZB-02A - Control dimmer de luz resistiva",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "switch",
+            "states": [
+                {
+                    "name": "Encendida",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagada",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": ["brightness"],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

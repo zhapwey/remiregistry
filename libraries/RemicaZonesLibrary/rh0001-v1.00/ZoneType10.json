@@ -1,0 +1,84 @@
+{
+  "type": 10,
+  "name": "Suelo Radiante / Refrescante + Fancoil de 13ºC – 16ºC + Compuerta de Zona",
+  "zone": [
+    {
+      "name": "T_Zona",
+      "type": null,
+      "description": "Tª Ambiente de Zona",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "H_Zona",
+      "type": null,
+      "description": "Humedad de Zona",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "Int_Zona",
+      "type": null,
+      "description": "Sensor de Interrupción de Zona",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "V2V_Suelo_C",
+      "type": null,
+      "description": "Válvula de Zona SR",
+      "device": null,
+      "property": null,
+      "ignore": false
+    },
+    {
+      "name": "Compuerta",
+      "type": "coil",
+      "description": "Compuerta / Rejilla",
+      "device": null,
+      "property": null,
+      "ignore": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "Zona_Act",
+      "type": "parameter",
+      "description": "Activación Termostato de Zona",
+      "value": "true"
+    },
+    {
+      "name": "Cons_Zona",
+      "type": "parameter",
+      "description": "Consigna actual en uso",
+      "value": "22"
+    },
+    {
+      "name": "FC_Carga_P",
+      "type": "configuration",
+      "description": "Carga Parcial de Zona para el Fancoil",
+      "value": "20"
+    },
+    {
+      "name": "On_Off",
+      "type": "configuration",
+      "description": "General zone On / Off switch",
+      "value": "1"
+    },
+    {
+      "name": "Modo_Auto_Man",
+      "type": "configuration",
+      "description": "Modo Automático / Manual",
+      "value": "1"
+    },
+    {
+      "name": "Modo_Func_A",
+      "type": "configuration",
+      "description": "Radiadores, Fancoil o ambos",
+      "value": "2"
+    }
+  ]
+}

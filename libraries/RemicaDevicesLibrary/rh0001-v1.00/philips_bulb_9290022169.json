@@ -1,0 +1,75 @@
+{
+    "model": "9290022169",
+    "vendor": "Philips",
+    "type": "Router",
+    "category": [
+        "bulb",
+        "touchlink"
+    ],
+    "description_en": "Philips - 9290022169 - Hue white ambiance - E27",
+    "description_es": "Philips - 9290022169 - Hue blanca ambiente - E27",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "color_temp",
+            "displayName": "Color de temperatura",
+            "prop_category": ["color_temp"],
+            "interaction": "exec",
+            "format": "color_temp",
+            "control": "color_temp",
+            "limits": {
+                "max": 460,
+                "min": 160,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "control": null,
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "model": "SA-003-Zigbee",
+    "vendor": "eWelink",
+    "type": "Router",
+    "category": [
+        "controller",
+        "plug"
+    ],
+    "description_en": "eWelink - SA-003-Zigbee - Zigbee smart plug",
+    "description_es": "eWelink - SA-003-Zigbee - Relé inteligente Zigbee",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "switch",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}

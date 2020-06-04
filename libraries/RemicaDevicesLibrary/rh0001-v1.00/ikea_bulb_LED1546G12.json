@@ -1,0 +1,71 @@
+{
+    "model": "LED1546G12",
+    "vendor": "Ikea",
+    "type": "Router",
+    "category": ["bulb"],
+    "description_en": "Ikea - LED1546G12 - TRADFRI bulb WS clear 950lm - E27",
+    "description_es": "Ikea - LED1546G12 - TRADFRI bombilla WS clear 950lm - E27",
+    "properties": [
+        {
+            "name": "state",
+            "displayName": "Estado",
+            "prop_category": [
+                "on_off",
+                "text"
+            ],
+            "interaction": "exec",
+            "format": "string",
+            "control": "on_off",
+            "states": [
+                {
+                    "name": "Encendido",
+                    "value": "on"
+                },
+                {
+                    "name": "Apagado",
+                    "value": "off"
+                }
+            ]
+        },
+        {
+            "name": "brightness",
+            "displayName": "Brillo",
+            "prop_category": [
+                "brightness",
+                "perc"
+            ],
+            "interaction": "exec",
+            "format": "perc",
+            "control": "horizontal_bar",
+            "limits": {
+                "max": 255,
+                "min": 0,
+                "increment": 1
+            }
+        },
+        {
+            "name": "color_temp",
+            "displayName": "Color de temperatura",
+            "prop_category": ["color_temp"],
+            "interaction": "exec",
+            "format": "color_temp",
+            "control": "color_temp",
+            "limits": {
+                "max": 460,
+                "min": 250,
+                "increment": 1
+            }
+        },
+        {
+            "name": "linkquality",
+            "displayName": "Calidad de enlace",
+            "interaction": "display",
+            "format": "perc",
+            "limits": {
+                "max": 100,
+                "min": 0,
+                "increment": 5
+            }
+        }
+    ]
+}
